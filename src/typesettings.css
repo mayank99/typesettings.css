@@ -1,5 +1,4 @@
-/* Typesettings.css - Created by Mike Mai | http://mikemai.net | http://mikemai.net/typesettings/index.html */
-:root {
+[data-typesettings] {
 	--ts-color-body: #4e4e4e;
 	--ts-color-heading: black;
 	--ts-color-link: var(--ts-color-heading);
@@ -33,9 +32,9 @@
 	--ts-main-padding-inline: 10vw;
 	--ts-banner-padding-inline: var(--ts-paragraph-indent);
 }
-*,
-*:before,
-*:after {
+[data-typesettings] *,
+[data-typesettings] *:before,
+[data-typesettings] *:after {
 	box-sizing: border-box;
 	font-feature-settings: 'kern';
 	-webkit-font-kerning: normal;
@@ -43,31 +42,15 @@
 	-moz-osx-font-smoothing: grayscale !important;
 	-webkit-font-smoothing: antialiased !important;
 }
-html {
+[data-typesettings] {
 	font-size: clamp(102%, 100% + 0.15vw, 125%);
 }
-body {
-	margin: 0;
-}
-body > a {
+[data-typesettings] > a {
 	display: block;
 	padding: 0.5em;
 	text-align: center;
 	font-weight: bold;
 	border: 2px dashed;
-}
-body > a:not(:focus) {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	padding: 0;
-	white-space: nowrap;
-	border: 0;
-	clip: rect(0 0 0 0);
-	-webkit-clip-path: inset(50%);
-	clip-path: inset(50%);
-	overflow: hidden;
 }
 @media (min-width: 25em) {
 	:lang(en) [data-typesettings] header[role='banner'] p:first-of-type:first-letter {
