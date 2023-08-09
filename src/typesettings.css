@@ -42,9 +42,6 @@
 	-moz-osx-font-smoothing: grayscale !important;
 	-webkit-font-smoothing: antialiased !important;
 }
-[data-typesettings] {
-	font-size: clamp(102%, 100% + 0.15vw, 125%);
-}
 [data-typesettings] > a {
 	display: block;
 	padding: 0.5em;
@@ -82,15 +79,19 @@
 		}
 	}
 }
-[data-typesettings] {
+[data-typesettings]:is(body) {
+	margin: 0;
 	min-block-size: 100vb;
+	background-color: var(--ts-color-background);
+}
+[data-typesettings] {
 	color: var(--ts-color-body);
 	line-height: var(--ts-line-height-body);
 	letter-spacing: 0.01em;
 	font-family: var(--ts-font-family-only-one, var(--ts-font-family-serif));
 	font-weight: var(--ts-font-weight-regular);
 	font-size: var(--ts-font-size);
-	background-color: var(--ts-color-background);
+	/* font-size: clamp(102%, 100% + 0.15vw, 125%); */
 }
 [data-typesettings] a {
 	text-decoration: none;
