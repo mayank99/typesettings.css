@@ -6,6 +6,16 @@
   <title>Documentation | Typesettings.css</title>
   <link rel="stylesheet" href="src/typesettings.css">
   <meta name="description" content="How-to's and demos on Typesettings.css features.">
+  <style>
+    a[href="#content"]:not(:active):not(:focus-within) {
+      clip-path: inset(50%);
+      height: 1px;
+      overflow: hidden;
+      position: absolute;
+      white-space: nowrap; 
+      width: 1px;
+    }
+  </style>
 </head>
 <body data-typesettings="golden">
   <a href="#content">
@@ -85,9 +95,8 @@
               Accessibility
             </h4>
             <p>
-              Create a skip link for the page by using an <code>&lt;a&gt;</code> element as the direct child of the <code>&lt;body&gt;</code>. Use the same text in the <code>href</code> attribute as the <code>id</code> for the content container.
+              Create a skip link for the page by using an <code>&lt;a&gt;</code> element as the direct child of the <code>&lt;body&gt;</code>. Use the same text in the <code>href</code> attribute as the <code>id</code> for the content container. You can optionally hide this link when not focused by manually adding <a href="https://www.tpgi.com/the-anatomy-of-visually-hidden/">the visually-hidden ruleset</a>.
             </p>
-            <pre><code>&lt;body&gt;<br>&nbsp;&nbsp;&lt;a href="#content"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;Skip to content<br>&nbsp;&nbsp;&lt;/a&gt;<br>&nbsp;&nbsp;&lt;div data-typesettings&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;nav&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&hellip;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/nav&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;main&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;article id="content"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&hellip;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/article&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/main&gt;<br>&nbsp;&nbsp;&lt;/div&gt;<br>&lt;/body&gt;</code></pre>
             <p>
               <abbr aria-label="Note">📣</abbr>: <em>Accessibility is important and everyone should write better code to support it. Please reference the <abbr aria-label="Web Content Accessibility Guidelines">WCAG</abbr> for <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">writing proper markup</a>.</em>
             </p>

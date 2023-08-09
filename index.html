@@ -6,6 +6,16 @@
   <title>Typesettings.css | Minimal CSS Framework</title>
   <link rel="stylesheet" href="src/typesettings.css">
   <meta name="description" content="Typesettings.css is inspired by traditional graphic design fundamentals and the perfect lite design systems for any minimal website or article design.">
+  <style>
+    a[href="#content"]:not(:active):not(:focus-within) {
+      clip-path: inset(50%);
+      height: 1px;
+      overflow: hidden;
+      position: absolute;
+      white-space: nowrap; 
+      width: 1px;
+    }
+  </style>
 </head>
 <body data-typesettings="golden">
   <a href="#content">
