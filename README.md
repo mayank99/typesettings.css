@@ -1,5 +1,11 @@
 # Typesettings.css
+
 Typesettings.css is a lite design system for minimal website or article design, inspired by traditional graphic design fundamentals. No colors; no Javascript; no classes required! In version 2.x, the typography scales bigger, the design goes bolder, & contrast gets stronger.
+
+***This fork includes the following changes:***
+- removed all global styles, to reduce side effects and make it more friendly for cascade layers.
+- converted everything to logical properties.
+- removed unnecessary vendor prefixes.
 
 ## Basic Usage
 ### 1. Include typesettings.css in the HTML file's `<head>` section:
