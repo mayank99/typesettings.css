@@ -14,7 +14,7 @@
 		monospace;
 	--ts-font-weight-bold: 800;
 	--ts-font-weight-regular: 300;
-	--ts-font-size: 1rem;
+	--ts-font-size: clamp(102%, 100% + 0.15vw, 125%);
 	--ts-font-size-xsmall: 0.7em;
 	--ts-font-size-small: 0.8em;
 	--ts-font-size-medium: 1em;
