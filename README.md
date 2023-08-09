@@ -12,7 +12,7 @@ Typesettings.css is a lite design system for minimal website or article design, 
 
 Note: If you are using typesettings.css as is, don't combine it with other frameworks. Also, basic resets are included, there is no need to use Normalize.css or Sanitize.css.
 
-### 2. Add `data-typesettings` attribute to the direct child element of the `<body>`:
+### 2. Add `data-typesettings` attribute to the any element, or even on `<body>`:
 
 ```html
 <body>
