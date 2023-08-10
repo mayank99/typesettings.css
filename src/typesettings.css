@@ -43,14 +43,6 @@
 	-webkit-font-smoothing: antialiased;
 }
 
-[data-typesettings] > a {
-	text-align: center;
-	border: 2px dashed;
-	padding: 0.5em;
-	font-weight: 700;
-	display: block;
-}
-
 @media (min-width: 25em) {
 	:lang(en) [data-typesettings] header[role='banner'] p:first-of-type:first-letter {
 		float: inline-start;
@@ -1037,8 +1029,8 @@
 
 [data-typesettings][data-typesettings*='dark'] {
 	filter: invert();
-	color: var(--ts-color-body) !important;
-	background-color: var(--ts-color-background) !important;
+	color: var(--ts-color-body);
+	background-color: var(--ts-color-background);
 }
 
 [data-typesettings][data-typesettings*='dark'] img:not([src*='\.svg']),
@@ -1058,8 +1050,8 @@
 @media (prefers-color-scheme: dark) {
 	[data-typesettings][data-typesettings*='auto'] {
 		filter: invert();
-		color: var(--ts-color-body) !important;
-		background-color: var(--ts-color-background) !important;
+		color: var(--ts-color-body);
+		background-color: var(--ts-color-background);
 	}
 
 	[data-typesettings][data-typesettings*='auto'] img:not([src*='\.svg']),
