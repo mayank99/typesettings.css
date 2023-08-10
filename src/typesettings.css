@@ -1030,7 +1030,6 @@
 [data-typesettings][data-typesettings*='dark'] {
 	filter: invert();
 	color: var(--ts-color-body);
-	background-color: var(--ts-color-background);
 }
 
 [data-typesettings][data-typesettings*='dark'] img:not([src*='\.svg']),
