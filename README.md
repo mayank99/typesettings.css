@@ -6,6 +6,7 @@ Typesettings.css is a lite design system for minimal website or article design, 
 - removed all global styles, to reduce side effects and make it more friendly for cascade layers.
 - converted everything to logical properties.
 - removed unnecessary vendor prefixes.
+- removed skip link styles.
 
 ## Basic Usage
 ### 1. Include typesettings.css in the HTML file's `<head>` section:
